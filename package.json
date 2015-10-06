@@ -1,0 +1,23 @@
+{
+  "name": "modernizr-loader",
+  "version": "0.0.1",
+  "description": "use modernizr with webpack easily",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "modernizr",
+    "webpack",
+    "loader"
+  ],
+  "author": "Markus Dobmann <markus.dobmann@peerigon.com>",
+  "license": "Unlicense",
+  "peerDependencies": {
+    "modernizr": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^1.6.0",
+    "eslint-config-peerigon": "^0.1.1"
+  }
+}

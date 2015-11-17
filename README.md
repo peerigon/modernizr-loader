@@ -1,5 +1,11 @@
 # modernizr-loader for webpack
 
+## Installation
+
+```
+$ npm install --save modernizr-loader
+```
+
 ## Usage
 
 [Documentation: Using loaders](http://webpack.github.io/docs/using-loaders.html)

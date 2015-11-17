@@ -44,7 +44,7 @@ module.exports = {
 }
 ```
 
-See the Modernizr documentation for all available options.
+See the [Modernizr documentation](https://modernizr.com/docs) for all available options.
 
 ## Contribution
 

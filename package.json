@@ -1,6 +1,6 @@
 {
   "name": "modernizr-loader",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "use modernizr with webpack easily",
   "main": "index.js",
   "scripts": {

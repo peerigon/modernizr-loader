@@ -55,7 +55,3 @@ See the [Modernizr documentation](https://modernizr.com/docs) for all available 
 ## Contribution
 
 Don't hesitate to create a pull request. Every contribution is appreciated. In development you can start the tests by calling `npm test`.
-
-## License
-
-Unlicense (http://unlicense.org/)

@@ -12,7 +12,7 @@
     "loader"
   ],
   "author": "Markus Dobmann <markus.dobmann@peerigon.com>",
-  "license": "Unlicense",
+  "license": "MIT",
   "peerDependencies": {
     "modernizr": "^3.1.0"
   },

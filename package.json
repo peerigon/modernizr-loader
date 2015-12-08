@@ -19,5 +19,13 @@
   "devDependencies": {
     "eslint": "^1.9.0",
     "eslint-config-peerigon": "^0.1.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peerigon/modernizr-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/peerigon/modernizr-loader/issues"
+  },
+  "homepage": "https://github.com/peerigon/modernizr-loader#readme"
 }

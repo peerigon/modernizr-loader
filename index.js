@@ -3,11 +3,11 @@
 var modernizr = require("modernizr");
 
 function wrapOutput(output) {
-  // Exposing Modernizr as a module.
-  return ';(function(window){\n' +
-            output + '\n' +
-            'module.exports = window.Modernizr;\n' +
-          '})(window);';
+    // Exposing Modernizr as a module.
+    return ";(function(window){\n" +
+            output + "\n" +
+            "module.exports = window.Modernizr;\n" +
+            "})(window);";
 }
 
 module.exports = function (config) {

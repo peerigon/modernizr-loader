@@ -30,6 +30,17 @@ require("!modernizr./.modernizrrc")
 // => returns compiled modernizr build based on your configuration
 ```
 
+You are also able to import Modernizr as a module throughout your application like so:
+
+```javscript
+import Modernizr from 'modernizr';
+
+if (!Modernizr.promises) {
+    // ...
+}
+```
+
+
 ### webpack config
 
 ```javascript

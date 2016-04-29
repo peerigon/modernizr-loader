@@ -26,7 +26,7 @@ You have to create a `.modernizrrc` configuration file and put your modernizr st
 Now you are able to require this `.modernizrrc` and get your built modernizr bundled with webpack.
 
 ```javascript
-require("!modernizr./.modernizrrc")
+require("!modernizr!./.modernizrrc")
 // => returns compiled modernizr build based on your configuration
 ```
 

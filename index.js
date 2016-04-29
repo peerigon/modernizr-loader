@@ -11,6 +11,10 @@ function wrapOutput(output) {
 }
 
 module.exports = function (config) {
+    if (typeof this.cacheable === 'function') {
+        this.cacheable()
+    }
+
     var cb = this.async();
 
     modernizr.build(JSON.parse(config), function (output) {

@@ -3,9 +3,7 @@
   "version": "0.0.5",
   "description": "use modernizr with webpack easily",
   "main": "index.js",
-  "scripts": {
-    "test": "npm test"
-  },
+  "scripts": {},
   "keywords": [
     "modernizr",
     "webpack",

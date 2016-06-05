@@ -1,6 +1,6 @@
 # modernizr-loader for webpack
 
-[![Build Status](https://travis-ci.org/peerigon/modernizr-loader.svg)](https://travis-ci.org/peerigon/modernizr-loader)
+[![Build Status](https://travis-ci.org/peerigon/modernizr-loader.svg)](https://travis-ci.org/peerigon/modernizr-loader) [![devDependency Status](https://david-dm.org/peerigon/modernizr-loader/dev-status.svg)](https://david-dm.org/peerigon/modernizr-loader#info=devDependencies) [![peerDependency Status](https://david-dm.org/peerigon/modernizr-loader/peer-status.svg)](https://david-dm.org/peerigon/modernizr-loader#info=peerDependencies)
 
 ## Installation
 

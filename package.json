@@ -20,7 +20,6 @@
     "ava": "^0.15.2",
     "eslint": "^2.11.1",
     "eslint-config-peerigon": "^4.0.0",
-    "jsdomify": "^2.1.0",
     "modernizr": "^3.3.1",
     "temp": "^0.8.3",
     "webpack": "^1.13.1"

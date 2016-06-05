@@ -1,5 +1,7 @@
 # modernizr-loader for webpack
 
+[![Build Status](https://travis-ci.org/peerigon/modernizr-loader.svg)](https://travis-ci.org/peerigon/modernizr-loader)
+
 ## Installation
 
 ```

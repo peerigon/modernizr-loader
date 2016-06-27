@@ -8,9 +8,7 @@
 $ npm install --save modernizr-loader
 ```
 
-## Usage
-
-[Documentation: Using loaders](http://webpack.github.io/docs/using-loaders.html)
+## Initialization
 
 You have to create a `.modernizrrc` configuration file and put your modernizr stuff in it. Like so
 
@@ -25,25 +23,13 @@ You have to create a `.modernizrrc` configuration file and put your modernizr st
 }
 ```
 
-Now you are able to require this `.modernizrrc` and get your built modernizr bundled with webpack.
+Full list of supported **"options"** and **"feature-detects"** can be found in Modernizr [config-all.json](https://github.com/Modernizr/Modernizr/blob/master/lib/config-all.json).
 
-```javascript
-require("!modernizr!./.modernizrrc")
-// => returns compiled modernizr build based on your configuration
-```
+### Webpack config
 
-You are also able to import Modernizr as a module throughout your application like so:
+[Documentation: Using loaders](http://webpack.github.io/docs/using-loaders.html)
 
-```javscript
-import Modernizr from 'modernizr';
-
-if (!Modernizr.promises) {
-    // ...
-}
-```
-
-
-### webpack config
+Put the following code to your webpack config file:
 
 ```javascript
 module.exports = {
@@ -60,6 +46,25 @@ module.exports = {
       modernizr$: path.resolve(__dirname, "path/to/.modernizrrc")
     }
   }
+}
+```
+
+### Usage
+
+Now you are able to require this `.modernizrrc` and get your built modernizr bundled with webpack. Put it somewhere in your project files:
+
+```javascript
+require("!modernizr!./.modernizrrc")
+// => returns compiled modernizr build based on your configuration
+```
+
+You are also able to import Modernizr as a module throughout your application like so:
+
+```javscript
+import Modernizr from 'modernizr';
+
+if (!Modernizr.promises) {
+    // ...
 }
 ```
 

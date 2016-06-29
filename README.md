@@ -51,14 +51,7 @@ module.exports = {
 
 ### Usage
 
-Now you are able to require this `.modernizrrc` and get your built modernizr bundled with webpack. Put it somewhere in your project files:
-
-```javascript
-require("!modernizr!./.modernizrrc")
-// => returns compiled modernizr build based on your configuration
-```
-
-You are also able to import Modernizr as a module throughout your application like so:
+Now you are able to import your custom Modernizr build as a module throughout your application like so:
 
 ```javscript
 import Modernizr from 'modernizr';

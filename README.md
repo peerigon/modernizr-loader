@@ -5,7 +5,7 @@
 ## Installation
 
 ```
-$ npm install --save modernizr-loader
+$ npm install --save-dev modernizr-loader
 ```
 
 ## Initialization

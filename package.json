@@ -17,12 +17,13 @@
     "modernizr": "^3.1.0"
   },
   "devDependencies": {
-    "ava": "^0.15.2",
-    "eslint": "^2.11.1",
-    "eslint-config-peerigon": "^4.0.0",
+    "ava": "^0.16.0",
+    "eslint": "^3.3.1",
+    "eslint-config-peerigon": "^6.0.0",
+    "eslint-plugin-jsdoc": "^2.3.1",
     "modernizr": "^3.3.1",
     "temp": "^0.8.3",
-    "webpack": "^1.13.1"
+    "webpack": "^1.13.2"
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,3 @@
-"use strict";
-
 import test from "ava";
 import webpack from "webpack";
 import temp from "temp";

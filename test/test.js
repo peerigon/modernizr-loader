@@ -17,7 +17,7 @@ const webpackConfig = {
     module: {
         loaders: [
             {
-                test: /\.modernizrrc$/,
+                test: /\.modernizrrc\.js$/,
                 loader: path.resolve(__dirname, "../index.js")
             }
         ]
@@ -40,4 +40,3 @@ test.cb((t) => {
         t.end();
     });
 });
-

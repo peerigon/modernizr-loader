@@ -7,7 +7,7 @@ function wrapOutput(output) {
     return ";(function(window){\n" +
             output + "\n" +
             "module.exports = window.Modernizr;\n" +
-            "})(window);";
+            "})({});";
 }
 
 module.exports = function (config) {

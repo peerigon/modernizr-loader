@@ -17,7 +17,7 @@ module.exports = function (config) {
 
     var cb = this.async();
 
-    modernizr.build(JSON.parse(config), function (output) {
+    modernizr.build(config, function (output) {
         cb(null, wrapOutput(output));
     });
 };

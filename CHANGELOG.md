@@ -1,3 +1,8 @@
+## 1.0.0
+
+- Don't attach Modernizr to window anymore
+- Allow using a JavaScript file for configuration
+
 ## 0.0.5
 
 - Add [cacheable flag](https://webpack.github.io/docs/how-to-write-a-loader.html#flag-itself-cacheable-if-possible) ([#7](https://github.com/peerigon/modernizr-loader/issues/7))

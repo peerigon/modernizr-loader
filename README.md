@@ -36,8 +36,12 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.modernizrrc$/,
+        test: /\.modernizrrc.js$/,
         loader: "modernizr"
+      },
+      {
+        test: /\.modernizrrc(\.json)?$/,
+        loader: "modernizr!json"
       }
     ]
   },

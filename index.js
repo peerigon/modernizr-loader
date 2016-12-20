@@ -7,7 +7,7 @@ function wrapOutput(output) {
     return ";(function(window){\n" +
             output + "\n" +
             "module.exports = window.Modernizr;\n" +
-            "})(window);";
+            "})({});";
 }
 
 module.exports = function (config) {
@@ -17,7 +17,7 @@ module.exports = function (config) {
 
     var cb = this.async();
 
-    modernizr.build(JSON.parse(config), function (output) {
+    modernizr.build(this.exec(config, this.resource), function (output) {
         cb(null, wrapOutput(output));
     });
 };

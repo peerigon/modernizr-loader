@@ -1,3 +1,3 @@
 "use strict";
 
-require("./.modernizrrc");
+require("./.modernizrrc.js");

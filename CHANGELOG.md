@@ -1,3 +1,7 @@
+## 1.0.1
+
+- Fix: Modernizr tests not working properly if window is undefined ([#25](https://github.com/peerigon/modernizr-loader/pull/25))
+
 ## 1.0.0
 
 - Don't attach Modernizr to window anymore

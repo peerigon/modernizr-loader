@@ -32,6 +32,8 @@ Full list of supported **"options"** and **"feature-detects"** can be found in M
 Put the following code to your webpack config file:
 
 ```javascript
+const path = require('path');
+
 module.exports = {
   module: {
     loaders: [

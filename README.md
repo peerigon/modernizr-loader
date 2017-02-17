@@ -72,3 +72,7 @@ See the [Modernizr documentation](https://modernizr.com/docs) for all available 
 ## Contribution
 
 Don't hesitate to create a pull request. Every contribution is appreciated.
+
+## Sponsors
+
+[<img src="https://assets.peerigon.com/peerigon/logo/peerigon-logo-flat-spinat.png" width="150" />](https://peerigon.com)

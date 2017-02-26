@@ -5,8 +5,10 @@
 ## Installation
 
 ```
-$ npm install --save-dev modernizr modernizr-loader
+$ npm install --save-dev modernizr modernizr-loader json-loader
 ```
+
+You need to install `json-loader` in order to make the `mordernizr-loader` configuration work with webpack.
 
 ## Initialization
 

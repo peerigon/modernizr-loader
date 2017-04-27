@@ -27,7 +27,7 @@ Full list of supported **"options"** and **"feature-detects"** can be found in M
 
 ### Webpack config
 
-[Documentation: Using loaders](http://webpack.github.io/docs/using-loaders.html)
+[Documentation: Using loaders](https://webpack.js.org/configuration/module/#rule-use)
 
 Put the following code to your webpack config file:
 
@@ -36,7 +36,7 @@ const path = require('path');
 
 module.exports = {
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.modernizrrc.js$/,
         use: [ 'modernizr-loader' ]

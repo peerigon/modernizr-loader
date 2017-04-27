@@ -10,26 +10,31 @@ test.cb("js", (t) => {
     const tempDir = temp.mkdirSync();
 
     webpack({
-        entry: "./fixtures/index.js",
+        entry: path.resolve(__dirname, "./fixtures/index.js"),
         output: {
-            path: `${tempDir}`,
+            path: tempDir,
             filename: "bundle.js"
         },
         module: {
-            loaders: [
+            rules: [
                 {
                     test: /\.modernizrrc\.js$/,
-                    loader: path.resolve(__dirname, "../index.js")
+                    use: [
+                        {
+                            loader: path.resolve(__dirname, "../index.js")
+                        }
+                    ]
                 }
             ]
         }
     }, (err, stats) => {
-        if (err) {
+        if (err || stats.hasErrors()) {
             t.end(err);
+
             return;
         }
 
-        const build = fs.readFileSync(`${tempDir}/bundle.js`, "utf8");
+        const build = fs.readFileSync(`${ tempDir }/bundle.js`, "utf8");
 
         t.true(/addTest\('flexbox/.test(build));
         t.true(/addTest\('promise/.test(build));
@@ -43,16 +48,16 @@ test.cb("json", (t) => {
     const tempDir = temp.mkdirSync();
 
     webpack({
-        entry: "./fixtures/index-json.js",
+        entry: path.resolve(__dirname, "./fixtures/index-json.js"),
         output: {
-            path: `${tempDir}`,
+            path: tempDir,
             filename: "bundle.js"
         },
         module: {
-            loaders: [
+            rules: [
                 {
                     test: /\.modernizrrc\.json$/,
-                    loaders: [
+                    use: [
                         path.resolve(__dirname, "../index.js"),
                         "json-loader"
                     ]
@@ -60,12 +65,13 @@ test.cb("json", (t) => {
             ]
         }
     }, (err, stats) => {
-        if (err) {
+        if (err || stats.hasErrors()) {
             t.end(err);
+
             return;
         }
 
-        const build = fs.readFileSync(`${tempDir}/bundle.js`, "utf8");
+        const build = fs.readFileSync(`${ tempDir }/bundle.js`, "utf8");
 
         t.true(/addTest\('flexbox/.test(build));
         t.true(/addTest\('promise/.test(build));

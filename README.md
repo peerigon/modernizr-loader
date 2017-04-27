@@ -5,7 +5,7 @@
 ## Installation
 
 ```
-$ npm install --save-dev modernizr modernizr-loader
+$ npm install --save-dev modernizr modernizr-loader json-loader
 ```
 
 ## Initialization
@@ -39,11 +39,11 @@ module.exports = {
     loaders: [
       {
         test: /\.modernizrrc.js$/,
-        loader: "modernizr"
+        use: [ 'modernizr-loader' ]
       },
       {
         test: /\.modernizrrc(\.json)?$/,
-        loader: "modernizr!json"
+        use: [ 'modernizr-loader', 'json-loader' ]
       }
     ]
   },

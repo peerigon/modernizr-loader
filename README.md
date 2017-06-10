@@ -5,7 +5,7 @@
 ## Installation
 
 ```
-$ npm install --save-dev modernizr modernizr-loader
+$ npm install --save-dev modernizr modernizr-loader json-loader
 ```
 
 ## Initialization
@@ -27,7 +27,7 @@ Full list of supported **"options"** and **"feature-detects"** can be found in M
 
 ### Webpack config
 
-[Documentation: Using loaders](http://webpack.github.io/docs/using-loaders.html)
+[Documentation: Using loaders](https://webpack.js.org/configuration/module/#rule-use)
 
 Put the following code to your webpack config file:
 
@@ -36,14 +36,14 @@ const path = require('path');
 
 module.exports = {
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.modernizrrc.js$/,
-        loader: "modernizr"
+        use: [ 'modernizr-loader' ]
       },
       {
         test: /\.modernizrrc(\.json)?$/,
-        loader: "modernizr!json"
+        use: [ 'modernizr-loader', 'json-loader' ]
       }
     ]
   },

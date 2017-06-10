@@ -21,7 +21,10 @@ module.exports = function (config) {
 
     var cb = this.async();
 
-    modernizr.build(this.exec(config, this.resource), function (output) {
+    // `this.exec` is deprecated
+    var options = require(this.resourcePath) || {};
+
+    modernizr.build(options, function (output) {
         cb(null, wrapOutput(output));
     });
 };

@@ -8,4 +8,4 @@ module.exports = {
     "test/es6/promises",
     "test/serviceworker"
   ]
-}
+};

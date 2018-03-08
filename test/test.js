@@ -13,7 +13,7 @@ test.cb("js", (t) => {
         entry: path.resolve(__dirname, "./fixtures/index.js"),
         output: {
             path: tempDir,
-            filename: "bundle.js"
+            filename: "bundle.js",
         },
         module: {
             rules: [
@@ -21,12 +21,12 @@ test.cb("js", (t) => {
                     test: /\.modernizrrc\.js$/,
                     use: [
                         {
-                            loader: path.resolve(__dirname, "../index.js")
-                        }
-                    ]
-                }
-            ]
-        }
+                            loader: path.resolve(__dirname, "../index.js"),
+                        },
+                    ],
+                },
+            ],
+        },
     }, (err, stats) => {
         if (err || stats.hasErrors()) {
             t.end(err);
@@ -51,7 +51,7 @@ test.cb("json", (t) => {
         entry: path.resolve(__dirname, "./fixtures/index-json.js"),
         output: {
             path: tempDir,
-            filename: "bundle.js"
+            filename: "bundle.js",
         },
         module: {
             rules: [
@@ -59,11 +59,11 @@ test.cb("json", (t) => {
                     test: /\.modernizrrc\.json$/,
                     use: [
                         path.resolve(__dirname, "../index.js"),
-                        "json-loader"
-                    ]
-                }
-            ]
-        }
+                        "json-loader",
+                    ],
+                },
+            ],
+        },
     }, (err, stats) => {
         if (err || stats.hasErrors()) {
             t.end(err);
